@@ -1,10 +1,10 @@
 /* Universal styles */
 body {
-	display: block;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif, arial;
 	color: #2C2E2E;
-	background-color: #FAF9F6;
+	background-color: rgb(252, 249, 249);
+	/*background-color: #FAF9F6;*/
 	max-width: 100%;
 }
 body, header, footer, .about, .achtergrond-ervaring {
@@ -12,17 +12,23 @@ body, header, footer, .about, .achtergrond-ervaring {
 }
 p.bold-letters {
 	font-family: 'Bebas Neue', cursive;
-	font-size: 45px;
-	color: #FAF9F6;
+	font-size: 2.5rem;
+	color: rgb(252, 249, 249);
 	text-transform: uppercase;
+	letter-spacing: 0.5pt;
 }
-.pagina-titel p {
+.pagina-titel {
 	font-family: 'Bebas Neue', cursive;
-	font-size: 35px;
+	font-size: 2rem;
 	color: #2C2E2E;
 	text-transform: uppercase;
-	margin-top: 3rem;
-	margin-left:3rem;
+	margin-top: 5rem;
+	margin-left:2.5rem;
+	letter-spacing: 0.5pt;
+	width: fit-content;
+}
+.container-banner {
+	display: block;
 }
 
 /*Header*/
@@ -32,14 +38,14 @@ header {
 }
 .logo {
 	margin: 0px;
-	background-color: #97D38B;
+	background-color: #9ac591;
 	height: 200px;
 	width: 60%;
 	display: block;
 }	
 .logo a {
 	position: relative;
-	color: #FAF9F6;
+	color: rgb(252, 249, 249);
 	margin-left: 1rem;
 }
 #page-logo{
@@ -51,24 +57,31 @@ header {
 	background-color: #2C2E2E;
 	width: 40%;
 	height: 200px;
-	border-left: 10px double #FAF9F6;
+	border-left: 10px double rgb(252, 249, 249);
+}
+nav {
+	position: absolute;
+	top: 9rem;
+	right: 1rem;
+
 }
 nav ul {
-	position: relative;
-	top: 8.5rem;
+	margin: 0;
+	margin-block-start: 0;
+	padding-inline-start: 0;
 }
-
 nav li  { /* horizontaal menu(about etc) */
 	display: inline-block;
 	padding: 10px;
-	font-size: 25px;
+	font-size: 1.5rem;
+	letter-spacing: 0.5pt;
 	font-family: 'Bebas Neue', cursive;
 	text-transform: uppercase;
 	text-decoration: none;
 	}
 
 nav a {
-	color: #FAF9F6;
+	color: rgb(252, 249, 249);
 }
 /*underline blijft niet staan op de pagina die actief is. Losse code per pagina?*/
 a.intern {
@@ -80,11 +93,11 @@ a.extern {
 	text-decoration: underline;	
 }
 a:hover.intern {
-	color: #2C2E2E;
+	color: #c29f88;
 	text-decoration: none;
   }
 a:hover.extern {
-	color: #FAF9F6;
+	color: #c29f88;
 	text-decoration: underline;
   }
 /*HOME-PAGINA*/
@@ -100,8 +113,8 @@ div.page-intro {
 
 }
 img#foto-intro {
-	position: absolute;
-	top: 10rem;
+	position: relative;
+	top: -2rem;
 	left: 10%;
 	width: 25%;
 	height: auto;
@@ -112,9 +125,8 @@ img#foto-intro {
 	position: relative;
 	margin: 10px;
 	width: 40%;
-	left: 40%;
-	margin-top: 5rem;
-
+	left: 15%;
+	top: 6rem;
 }
 .tekst-intro p {
 	font-size: 18px;
@@ -131,43 +143,49 @@ img#foto-intro {
 /*ABOUT-PAGINA*/
 /*About-intro*/
 .about {
-	position: relative;
-	top: -45px;
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-bottom: 3rem;
 }
 .about p {
-	width: 50%;
-	margin-top: 1.5em;
-	margin-left: 3em;
+	width: 55%;
+	padding-left: 3rem;
+	margin-top: 0;
 }
+
 #foto-cv {
 	position: relative;
-	top: -30px;
+	top: -50px;
 	width: 20%;
+	height: auto;
 	left: 10%;
 	border: 10px double #2C2E2E;
 }
 /*Ervaring+Achtergrond+Projecten*/
-.container-banner {
-	display: flex;
-	border-bottom: 10px double #FAF9F6;
-}
+
 .dark-box-40 {
-	background-color: #2C2E2E;
-	width: 40%;
-	border-left: 10px double #FAF9F6;
-	color: #FAF9F6;
-	padding: 5px;
+	margin: 4rem;
+	color: #2C2E2E;
+	background-color: rgb(238, 235, 235);
+}
+.dark-box-40 p {
+	padding: 2rem;
 }
 .green-box-60 {
-	background-color: #97D38D;
-	width: 60%;
+	background-color: #9ac591;
+	max-width: 100%;
 	align-items: center;
-	padding-left: 15px;
 }
-#content-dark-box-40 {
-	margin: 5px;
+.green-box-60 p {
+	margin: 0;
+	padding: 2rem;
+	width: 50%;
 }
+#boeken {
+	margin: 0;
+}
+
 /*Achtergrond+ervaring*/
 img#icon {
 	width: 24px;
@@ -175,16 +193,14 @@ img#icon {
 	margin: 0 2.5px;
 }
 p.achtergrond-ervaring {
-	font-weight: 550;
+	font-weight: 600;
 }
 .achtergrond-ervaring i {
-	font-size: 12px;
+	font-size: 14px;
 	margin-top: 5px;
 	font-weight: normal;
 }
-span#not-bold {
-	font-weight: normal;
-}
+
 /*Technische-skills*/
 .technische-skills {
 	width: 100%;
@@ -192,10 +208,12 @@ span#not-bold {
 .technische-skills p {
 	width: 100%;
 	text-align: center;
-	background-color: #2C2E2E;
+	background-color: #9ac591;
+	margin-top: 0;
 }
 #image-containter-tenische-skills {
 	display: flex;
+	background-color: rgb(238, 235, 235);
 }
 .technische-skills img {
 	width: 10%;
@@ -204,23 +222,19 @@ span#not-bold {
 	justify-content: space-evenly;
 }
 /*PROJECTEN-PAGINA*/
-.green-box-60 p {
+.project-overzicht {
+	display: flex;
+	flex-direction: row;
 	width: 100%;
 }
-.green-box-60 a {
-	margin: 0;
-	float: right;
-	width: 55%;
-	height: auto;
-}
-#project-overview {
-	display: flex;
+.project-tekst {
+	width: 100%;
 }
 img.project-image {
-	width: 100%;
+	width: 60%;
 	height: auto;
-	padding: 15px;
-	float: right;
+	padding: 3rem 1rem;
+	display: flex;
 }
 
 .dark-box-40 li {
@@ -229,6 +243,12 @@ img.project-image {
 	}
 .dark-box-40 ul {
 	width: 70%;
+	padding: 0 0 1rem 3rem;
+	margin: 0;
+}
+.project-omschrijving {
+	padding: 2rem!important;
+	margin-bottom: 0;
 }
 /*CONTACT-PAGINA*/
 div.contactpagina {
@@ -238,18 +258,31 @@ div.contactpagina {
 	margin: 10px auto;
 	width: 25%;
 	align-items: center;
+	align-content: center;
+	background-color: rgb(238, 235, 235);
+	padding: 2rem 2rem 1rem;
 }
 p#font-size18 {
 	font-size: 18px;
 	margin: 2.5px;
 }
+.contactgegevens a {
+	color:#2C2E2E;
+}
+.contactgegevens img {
+	margin-right: 1rem!important;
+}
+.contact-item {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 1rem;
+}
 /*footer*/
-footer {
-	display: block;
-	margin-top: 3em;
+footer {  
 	position: relative;
+	bottom: 0;
+	width: 100%;
 	text-align: center;
-	z-index: 10;
 }
 footer p {
 	font-size: 0.75em;
