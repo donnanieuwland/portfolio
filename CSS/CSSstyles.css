@@ -4,8 +4,7 @@ body {
 	font-family: 'Lato', sans-serif, arial;
 	color: #2C2E2E;
 	background-color: rgb(252, 249, 249);
-	/*background-color: #FAF9F6;*/
-	max-width: 100%;
+	width: 100%;
 }
 body, header, footer, .about, .achtergrond-ervaring {
 	margin: 0;
@@ -39,12 +38,11 @@ header {
 .logo {
 	margin: 0px;
 	background-color: #9ac591;
-	height: 200px;
+	height: 12.5rem;
 	width: 60%;
-	display: block;
 }	
 .logo a {
-	position: relative;
+	position: absolute;
 	color: rgb(252, 249, 249);
 	margin-left: 1rem;
 }
@@ -53,10 +51,9 @@ header {
 }
 
 .nav-menu {
-	display: block;
 	background-color: #2C2E2E;
 	width: 40%;
-	height: 200px;
+	height: 12.5rem;
 	border-left: 10px double rgb(252, 249, 249);
 }
 nav {
@@ -129,7 +126,7 @@ img#foto-intro {
 	top: 6rem;
 }
 .tekst-intro p {
-	font-size: 18px;
+	font-size: 18px!important;
 }
 #hi {
 	color: #2C2E2E;
@@ -161,6 +158,43 @@ img#foto-intro {
 	height: auto;
 	left: 10%;
 	border: 10px double #2C2E2E;
+}
+
+
+#mobile-page-logo {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5rem;
+	color: rgb(252, 249, 249);
+	text-transform: uppercase;
+	letter-spacing: 0.5pt;	
+	padding-left: 1rem;
+}
+	#mobile {
+	width: 100%;
+	background-color: #9ac591;
+	height: 8rem;
+}
+.mobile-nav {
+	position: relative;
+	padding: 0;
+	left: 11rem;
+	margin: 0;
+	top: 2.5rem;
+}
+.menu-items {
+	display: inline-block;
+	padding: 5px;
+	font-size: 1rem;
+	letter-spacing: 0.5pt;
+	font-family: 'Bebas Neue', cursive;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.menu-items a {
+	color: rgb(252, 249, 249);
+}
+#mobile-page-logo a {
+	color: rgb(252, 249, 249);
 }
 /*Ervaring+Achtergrond+Projecten*/
 
@@ -256,7 +290,7 @@ div.contactpagina {
 }
 .contactgegevens {
 	margin: 10px auto;
-	width: 25%;
+	width: fit-content;
 	align-items: center;
 	align-content: center;
 	background-color: rgb(238, 235, 235);
@@ -280,7 +314,6 @@ p#font-size18 {
 /*footer*/
 footer {  
 	position: relative;
-	bottom: 0;
 	width: 100%;
 	text-align: center;
 }
@@ -288,4 +321,61 @@ footer p {
 	font-size: 0.75em;
 	color: #111313;
 	padding: 10px;
+}
+
+@media only screen and (min-width: 452px) {
+	#mobile {
+	display: none;
+	}
+}
+@media only screen and (max-width: 451px) {
+	.page-intro {
+  	flex-direction: column-reverse;
+  	align-content: center;
+  	margin: 1rem auto;
+  	max-width: 100%;
+}
+	.intro-tekst {
+		position: relative;
+		top: 0!important;
+		left: 0!important;
+		width: 80%!important;
+		height: fit-content;
+		margin: 0 auto!important;
+		padding: 1rem;
+		display: block;
+
+	}
+	img#foto-intro {
+		width: 60%;
+		height: auto;
+		position: static;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.nav-menu, .logo {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 451px) {
+	.about {
+		flex-direction: column;
+	}
+	.about p {
+		width: 80%;
+	}
+	#foto-cv {
+		width: 80%;
+		position: relative;
+		top: 0;		
+	}
+	.project-overzicht {
+		display: block;
+	}
+	img.project-image {
+		width: 80%;
+	}
 }
