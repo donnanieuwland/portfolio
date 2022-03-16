@@ -1,0 +1,124 @@
+/*UNIVERISAL STYLES*/
+body {
+    background-color: white;
+    font-family: "Lexend Mega", sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 22px;
+}
+body, header, .main-content, .company-vison, .portfolio, .team, footer {
+    margin: 0;
+    width: 100%;
+}
+div {
+    display: block;
+}
+p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 25px;
+}
+/*HEADER*/
+header h1 {
+    margin-bottom: 10px;
+}
+nav ul {
+    display: flex;
+    text-decoration: underline;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    margin: 20px 10% 35px;
+}
+nav li {
+    margin:auto;
+    padding: 10px;
+}
+/*MAIN-CONTENT*/
+/*COMPANY-VISION*/
+.company-vison {
+    display: flex;
+    height: 300px;
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
+    padding-top: 35px;
+    width: 100%;
+}
+#vision {
+    vertical-align: middle;
+    background-color: white;
+    height: fit-content;
+    margin: auto;
+    width: 100%;
+}
+#vision h2 {
+    margin-top: 10px;
+}
+#vision h4 {
+    margin: 10px;
+}
+/*PORTFOLIO*/
+.portfolio {
+    min-height: 500px;
+    padding-top: 70px;
+}
+#header-portfolio h3 {
+    padding: 10px;
+}
+.content-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.portfolio-item  { /*images+tekst*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 450px;
+    margin: auto;
+}
+.portfolio-item img {
+    width: 200px;
+    padding: 10px;
+    height: 150px;
+}
+.portfolio-item h4 {
+    padding: 5px;
+    text-align: center;
+}
+/*TEAM*/
+.team {
+    height: 400px;
+}
+#team-header {
+    width: 100%;
+    text-align: center;
+}
+.team-fotos {
+    background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg");
+    max-width: 100%;
+    display: flex;
+    padding: 0 100px;
+   justify-content: center;
+}
+.team-member { /*team-members.incl images*/
+    color: white;
+    padding: 10px;
+    height: auto;
+    max-width: 250px;
+}
+.team-member img {
+    width: 200px;
+    height: auto;
+}
+/*FOOTER*/
+footer {
+    display: block;
+}
+#contact-info {
+    margin-top: 250px;
+}
+#copyright {
+    margin-top: 80px;
+}
