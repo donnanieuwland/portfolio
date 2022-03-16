@@ -103,7 +103,7 @@ a:hover.extern {
 	display: block;
 	margin: 0;
 	width: 100%;
-	height: 475px;
+	height: fit-content;
 }
 div.page-intro {
 	display: flex;
@@ -177,9 +177,8 @@ img#foto-intro {
 .mobile-nav {
 	position: relative;
 	padding: 0;
-	left: 11rem;
 	margin: 0;
-	top: 2.5rem;
+	float: right;
 }
 .menu-items {
 	display: inline-block;
