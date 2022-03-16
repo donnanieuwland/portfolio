@@ -1,1 +1,742 @@
+<!DOCTYPE html>
+<html lang="nl">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Colmar Academy">
+  <meta name="keywords" content="Colmar Academy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Colmar Academy
+  </title>
+  <style>
+    /* Universal Styles */
+    html {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      color: rgb(87, 85, 85);
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      position: relative;
+      top: 4rem;
+      /* To offset for fixed header. */
+    }
+
+    header,
+    body,
+    .main-content,
+    footer {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img,
+    video {
+      border: none;
+    }
+
+    /*HEADER*/
+    nav.desktop {
+      display: block;
+      position: fixed;
+      display: flex;
+      z-index: 100;
+      width: 100%;
+      height: 4rem;
+      background-color: white;
+    }
+
+    div#school-logo {
+      margin-left: 1.5rem;
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    a#desktop-logo {
+      font-size: 20px;
+      color: #4a4a4a;
+      text-decoration: none;
+    }
+
+    img#logo {
+      height: 32px;
+      margin-right: 0.25rem;
+    }
+
+    nav.desktop ul {
+      display: flex;
+      list-style-type: none;
+      margin-right: 1rem;
+    }
+
+    nav.desktop a {
+      vertical-align: bottom;
+      line-height: 1.6;
+      font-size: 18px;
+      color: #4a4a4a;
+      text-decoration: none;
+      padding: 0rem 0.5rem;
+    }
+
+    @media only screen and (min-width: 451px) {
+      .nav-mobile {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 450px) {
+      nav.desktop {
+        display: none;
+      }
+    }
+
+    .nav-mobile {
+      width: 100%;
+      position: fixed;
+      z-index: 99;
+      height: 4rem;
+      background-color: white;
+    }
+
+    .nav-mobile ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      margin: auto;
+      padding: 0 1.5rem;
+      width: 100%;
+      height: 4rem;
+    }
+
+    .nav-mobile li {
+      justify-content: space-evenly;
+      margin: auto;
+      width: 100%;
+    }
+
+    .nav-mobile img {
+      justify-content: space-evenly;
+      margin: auto;
+      padding: auto;
+    }
+
+    /*SIGNUP section*/
+    .main-content {
+      justify-content: center;
+      width: 100%;
+    }
+
+    .start-here-section {
+      background-color: rgb(223, 213, 213);
+      display: flex;
+      max-width: 100%;
+    }
+
+    img.start-here-section-img {
+      width: 60%;
+      margin: 2rem 1.5rem;
+    }
+
+    .start-here-cta {
+      width: 30%;
+      height: 40%;
+      margin-top: 15%;
+    }
+
+    h1,
+    h2 {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .start-here-cta h1,
+    .start-here-cta h2 {
+      margin-bottom: 1rem;
+    }
+
+    #start-here-button {
+      background-color: rgb(87, 85, 85);
+      color: white;
+      width: 90%;
+      margin-top: 1rem;
+
+    }
+
+    #content-start-here-button {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 450px) {
+      .start-here-section {
+        flex-flow: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+      }
+
+      img.start-here-section-img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .start-here-cta {
+        width: auto;
+        height: auto;
+        margin: 2rem 1rem 2rem 1rem;
+      }
+
+      .start-here-cta h1 {
+        width: 95%;
+      }
+
+      .start-here-cta h2 {
+        width: 95%;
+      }
+
+      #start-here-button {
+        margin-top: 1.5rem;
+        width: 100%;
+      }
+    }
+
+    /*ARTICLE SECTION*/
+    .article-section {
+      max-width: 100%;
+      display: flex;
+    }
+
+    .big-article {
+      width: 68%;
+      padding: 2rem 1.5rem;
+    }
+
+    #img-big-article {
+      width: 100%;
+      margin-bottom: 2rem;
+      margin-right: 1.5rem;
+    }
+
+    p.big-article {
+      margin: 1.5rem;
+    }
+
+    p#auteur {
+      font-size: 0.75rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+
+    .small-articles {
+      width: 40%;
+      border-left: solid 2px rgb(223, 213, 213);
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    .small-articles img {
+      width: 35%;
+      height: auto;
+      margin: 1rem;
+    }
+
+    #article-1,
+    #article-2,
+    #article-3 {
+      display: flex;
+      border-bottom: solid 4px rgb(223, 213, 213);
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    .content-small-article {
+      width: 65%;
+    }
+
+    p.small-articles {
+      margin: 0.5rem;
+    }
+
+    p.Read-more {
+      color: skyblue;
+    }
+
+    #article-1 {
+      padding-top: 1rem;
+    }
+
+    #article-3 {
+      background-color: rgb(223, 213, 213);
+    }
+
+    @media only screen and (max-width: 450px) {
+
+      .article-section {
+        flex-flow: column;
+        max-width: 100%;
+      }
+
+      .big-article {
+        display: none;
+      }
+
+      .small-articles {
+        flex-flow: column;
+        width: 100%;
+        border-bottom: 1px solid rgb(223, 213, 213);
+        padding: 1rem;
+        margin: 0;
+      }
+
+      .small-articles img {
+        width: 100%;
+      }
+
+      #article-1,
+      #article-2,
+      #article-3 {
+        flex-flow: column;
+        border-bottom: none;
+        margin: 0;
+        width: 100%;
+      }
+
+      #article-1 {
+        padding-top: 0;
+      }
+
+      #article-3 {
+        background-color: white;
+      }
+
+      .content-small-article {
+        width: 100%;
+        padding: 2rem;
+      }
+    }
+
+    /*START LEARNING SECTION*/
+
+    .start-learning-section-desktop {
+      background-color: rgb(223, 213, 213);
+      margin: 0;
+      width: 100%;
+    }
+
+    h1.start-learning {
+      vertical-align: middle;
+      text-align: center;
+      padding: 3rem 0rem 2rem;
+    }
+
+    .courses-overview {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0rem 3.5rem 2rem 3.5rem;
+      width: auto;
+    }
+
+    .course {
+      margin: 1rem;
+      width: 30%;
+      background-color: white;
+    }
+
+    img.img-course {
+      width: 100%;
+      height: auto;
+    }
+
+    .content-course {
+      padding: 1rem 1rem 1.5rem 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .start-learning-section-desktop {
+        display: none;
+      }
+    }
+
+    .start-learning-section-mobile {
+      padding-bottom: 2rem;
+      border: 1px solid rgb(223, 213, 213);
+      width: 100%;
+    }
+
+    .start-learning-section-mobile h1 {
+      padding-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .mobile-courses {
+      background-color: rgb(223, 213, 213);
+      margin: 0.5rem 1rem;
+    }
+
+    .mobile-courses h2 {
+      padding: 1rem 1rem 1.5rem 1rem;
+    }
+
+
+    @media only screen and (min-width: 895px) {
+      .start-learning-section-mobile {
+        display: none;
+      }
+    }
+
+    /*THESIS EXHIBIT SECTION*/
+    .exhibit-section {
+      width: 100%;
+      background-color: white;
+    }
+
+    .exhibit-section h1 {
+      vertical-align: middle;
+      text-align: center;
+      padding: 2rem 0rem 2rem;
+    }
+
+    #thesis-exhibit {
+      display: flex;
+    }
+
+    .video-article {
+      width: 60%;
+      margin: 0rem 1.5rem;
+    }
+
+    .video-article h1 {
+      text-align: left;
+      margin-top: 0;
+      padding: 0;
+    }
+
+    .video-article p {
+      text-align: left;
+      margin: 0.5rem 0rem 1.5rem;
+      padding: 0;
+    }
+
+    .small-thesis-articles {
+      width: 40%;
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    img.small-articles {
+      margin: 1rem;
+      width: 35%;
+    }
+
+    #article-fisma {
+      background-color: rgb(223, 213, 213);
+    }
+
+    video#video-big-article {
+      margin-bottom: 1.5rem;
+      width: 100%;
+    }
+
+    #article-fisma,
+    #article-now-and-then {
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #thesis-exhibit {
+        flex-flow: column;
+      }
+
+      .video-article {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .video-article h1 {
+        display: none;
+      }
+
+      .video-article p {
+        display: none;
+      }
+
+      video#video-big-article {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .small-thesis-articles {
+        display: none;
+      }
+
+    }
+
+    /*FOOTER*/
+    footer {
+      display: block;
+      width: 100%;
+      background-color: white;
+      align-items: center;
+      height: 4.5rem;
+    }
+
+    .footer-content {
+      display: flex;
+      border-top: 1px solid rgb(223, 213, 213);
+      width: 100%;
+      margin: 0;
+    }
+
+    div#copyright {
+      flex: 1;
+      font-size: 0.75rem;
+      margin: 1rem 1.5rem;
+    }
+
+    div#terms {
+      margin: 0rem;
+    }
+
+    .footer-content li {
+      display: inline-flex;
+      font-size: 0.75rem;
+      margin: 1rem 0.25rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      div#terms {
+        display: none;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="CSS/Style.CSS">
+</head>
+
+<body>
+  <nav class="desktop">
+    <div id="school-logo">
+      <img id="logo" src="img/ic-logo.svg">
+      <a href="Colmaracademy.html" id="desktop-logo"><b>COLMAR</b>ACADEMY</a>
+    </div>
+    <ul>
+      <li><a href="#">On campus</a></li>
+      <li><a href="#">Online or companies</a></li>
+      <li><a href="#">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-mobile">
+    <ul>
+      <li><a href="#"><img src="img/ic-logo.svg"></a></li>
+      <li><a href="#"><img src="img/ic-on-campus.svg"></a></li>
+      <li><a href="#"><img src="img/ic-online.svg"></a></li>
+      <li><a href="#"><img src="img/ic-login.svg"></a></li>
+    </ul>
+    </nav>
+  </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <!-- Sign Up Section -->
+    <div class="start-here-section" class="banner">
+      <img class="start-here-section-img" src="img/banner.jpg">
+      <div class="start-here-cta">
+        <h1>Learn something new everyday</h1>
+        <h2>Lorem ipsus dolor sit amet, consectetur adipiscing elet.</h2>
+        <div id="start-here-button">
+          <p id="content-start-here-button">Start here</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Articles Section-->
+    <div class="article-section">
+      <div class="big-article">
+        <img id="img-big-article" src="img/information-main.jpg">
+        <h1>It doesn't hurt to keep practicing</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum mauris a cursus rutrum.
+          Aenean nec ultrices mauris. Curabitur varius nisl eget pharetra sagittis. Quisque sagittis porttitor
+          tincidunt. Nam eu tincidunt urna."</p>
+        <p id="auteur">Emanuel, SR Strategist at Hiring.com</p>
+      </div>
+      <div class="small-articles">
+        <div id="article-1">
+          <img src="img/information-orientation.jpg">
+          <div class="content-small-article">
+            <h2>Orientation date</h2>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#">
+              <p class="Read-more">Read more</p>
+            </a>
+          </div>
+        </div>
+        <div id="article-2">
+          <img src="img/information-campus.jpg">
+          <div class="content-small-article">
+            <h2>Our Campus</h2>
+            <p>Find which campus is close by you</p>
+            <a href="#">
+              <p class="Read-more">Read more</p>
+            </a>
+          </div>
+        </div>
+        <div id="article-3">
+          <img src="img/information-guest-lecture.jpg">
+          <div class="content-small-article">
+            <h2>Our guest lecture</h2>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <a href="#">
+              <p class="Read-more">Read more</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Start Learning Section-->
+    <div class="start-learning-section-desktop">
+      <h1 class="start-learning">Start Learning</h1>
+
+      <div class="courses-overview">
+        <div class="course">
+          <div class="course-box"><img src="img/course-software.jpg" class="img-course">
+            <div class="content-course">
+              <h2>Software engineering</h2>
+              <p>COURSES</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-box"><img src="img/course-computer-art.jpg" class="img-course">
+            <div class="content-course">
+              <h2>Computer art</h2>
+              <p>COURSES</p>
+              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            </div>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-box"><img src="img/course-design.jpg" class="img-course">
+            <div class="content-course">
+              <h2>Design</h2>
+              <p>COURSES</p>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-box"><img src="img/course-data.jpg" class="img-course">
+            <div class="content-course">
+              <h2>Data</h2>
+              <p>COURSES</p>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-box"><img src="img/course-business.jpg" class="img-course">
+            <div class="content-course">
+              <h2>Business</h2>
+              <p>COURSES</p>
+              <p>Product Development, Business Development</p>
+            </div>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-box"><img src="img/course-marketing.jpg" class="img-course">
+            <div class="content-course">
+              <h2>Marketing</h2>
+              <p>COURSES</p>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start-learning-section-mobile">
+      <h1>Start Learning</h1>
+      <div class="mobile-courses">
+        <h2>Software engineering</h2>
+      </div>
+      <div class="mobile-courses">
+        <h2>Computer art</h2>
+      </div>
+      <div class="mobile-courses">
+        <h2>Design</h2>
+      </div>
+      <div class="mobile-courses">
+        <h2>Data</h2>
+      </div>
+      <div class="mobile-courses">
+        <h2>Business</h2>
+      </div>
+      <div class="mobile-courses">
+        <h2>Marketing</h2>
+      </div>
+    </div>
+    <!--Thesis exhibit section-->
+    <div class="exhibit-section">
+      <h1>Thesis exhibit</h1>
+      <div id="thesis-exhibit">
+        <div class="video-article">
+          <video id="video-big-article" controls>
+            <source src="videos/thesis.mp4" type="video/mp4">
+          </video>
+          <h1>Reimagine urban</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum mauris a cursus rutrum.
+            Aenean nec ultrices mauris. Curabitur varius nisl eget pharetra sagittis. Quisque sagittis porttitor
+            tincidunt. Nam eu tincidunt urna."</p>
+        </div>
+        <div class="small-thesis-articles">
+          <div id="article-fisma">
+            <img class="small-articles" src="img/thesis-fisma.jpg">
+            <div class="content-small-article">
+              <h2>Fisma: Design and Prototype</h2>
+              <p>Designer showcase of new protype product</p>
+            </div>
+          </div>
+          <div id="article-now-and-then">
+            <img class="small-articles" src="img/thesis-now-and-then.jpg">
+            <div class="content-small-article">
+              <h2>Now and then</h2>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div id="copyright">
+          <p>© 2016 Colmar Academy. All rights reserved</p>
+        </div>
+        <div id="terms">
+          <ul>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
