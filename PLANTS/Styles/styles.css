@@ -1,0 +1,167 @@
+/*Universal styles*/
+body {
+    font-size: 16px;
+    font-family: 'Sitka Banner';
+    color: #707070;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+body::after{
+    content: "";
+    background-image: url('../Styles/header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;    
+}
+.content {
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+    left: 10%;
+    width: 90%;  
+}
+a {
+    color: #707070;
+}
+p {
+     font-size: 20px;
+}
+h1 {
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h3 {
+   font-size: 40px; 
+   font-weight: bold;
+   margin-bottom: 0;
+}
+/*Header*/
+header {
+    width: 40%;
+}
+/*Nieuwste-blogs*/
+div.nieuwste-blogs {
+    display: flex;
+    flex-flow: row wrap;
+    width: 65%;
+}
+
+.nieuwste-blogs h2 {
+    display: block;
+    width: 100%;
+}
+.nieuwste-blogs p {
+    margin-top: 0.1rem;
+}
+.blog-1 {
+    width: 45%;
+    margin-right: 1.5rem;
+}
+.blog-2 {
+    width: 45%;
+}
+#blog-3 {
+    width: 45%;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+#blog-4 {
+    width: 45%;
+    margin-top: 1rem;
+}
+
+.nieuwste-blogs img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 600px) {
+    .content {
+        position: relative;
+        width: 90%;
+        margin: 1rem 2rem;
+        left: 0;
+        max-width: 100%;
+    }
+    div.nieuwste-blogs {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+    aside {
+        display: none;
+    }
+    .blog-1, .blog-2, #blog-3, #blog-4 {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        max-width: 100%;
+    }
+    h1 {
+    font-size: 8rem;
+    }
+}
+/*Populaire-blogs*/
+aside {
+    position: absolute;
+    right: 13rem;
+}
+.populaire-blogs {
+    background-color: RGBA(255,255,255, 0.5);
+}
+/*aanmelden*/
+.aanmelden	{
+    margin-top: 5rem;
+}
+.aanmelden p {
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+#email-formulier {
+    border: 1px solid #707070;
+    border-radius: 2px;
+    opacity: 50%;
+    text-align: center;
+    margin-right: 1rem;
+    padding: 1rem 5rem;
+    display: inline;
+}
+#email-button {
+    display: inline;
+    background-color: #707070;
+    border: 1px solid #707070;
+    border-radius: 2px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+/*footer*/
+footer {
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
+}
+#socials-container {
+    text-align: center;
+    margin: 0 auto;
+}
+.socials-img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.3rem;
+}
