@@ -15,6 +15,7 @@ p.bold-letters {
 	color: rgb(252, 249, 249);
 	text-transform: uppercase;
 	letter-spacing: 0.5pt;
+	padding: 1rem 2rem;
 }
 .pagina-titel {
 	font-family: 'Bebas Neue', cursive;
@@ -207,13 +208,11 @@ img#foto-intro {
 }
 .green-box-60 {
 	background-color: #9ac591;
-	max-width: 100%;
+	width: 100%;
 	align-items: center;
 }
 .green-box-60 p {
 	margin: 0;
-	padding: 2rem;
-	width: 100%;
 }
 #boeken {
 	margin: 0;
@@ -237,15 +236,14 @@ p.achtergrond-ervaring {
 .technische-skills {
 	width: 100%;
 }
+
 .technische-skills p {
-	width: 100%;
 	text-align: center;
-	background-color: #9ac591;
-	margin-top: 0;
 }
 #image-containter-tenische-skills {
 	display: flex;
 	background-color: rgb(238, 235, 235);
+	margin: 3rem auto;
 }
 .technische-skills img {
 	width: 10%;
@@ -263,9 +261,9 @@ p.achtergrond-ervaring {
 	width: 100%;
 }
 img.project-image {
-	width: 60%;
+	width: 70%;
 	height: auto;
-	padding: 3rem 1rem;
+	padding: 2rem 1rem;
 	display: flex;
 }
 .dark-box-40 li {
@@ -274,12 +272,16 @@ img.project-image {
 	}
 .dark-box-40 ul {
 	width: 70%;
-	padding: 0 0 1rem 3rem;
-	margin: 0;
+	margin: 0 0 1rem;
 }
+
 .project-omschrijving {
-	padding: 2rem!important;
-	margin-bottom: 0;
+	margin-bottom: 0!important;
+	padding: 2rem 1rem 1rem 2rem!important;
+
+}
+a.project-omschrijving {
+	color: #c29f88;
 }
 /*CONTACT-PAGINA*/
 div.contactpagina {
