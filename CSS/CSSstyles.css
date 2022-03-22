@@ -46,9 +46,25 @@ header {
 	position: absolute;
 	color: rgb(252, 249, 249);
 	margin-left: 1rem;
+	text-decoration: none;
+
 }
 #page-logo{
 	margin-top: 1rem;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2.5rem;
+	color: rgb(252, 249, 249);
+	text-transform: uppercase;
+	letter-spacing: 0.5pt;
+	padding: 1rem 0rem 0rem 2rem;
+}
+#subtitel-logo {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5rem;
+	color: rgb(252, 249, 249);
+	text-transform: uppercase;
+	letter-spacing: 0.5pt;
+	padding: 0 3rem;
 }
 
 .nav-menu {
@@ -82,14 +98,6 @@ nav a {
 	color: rgb(252, 249, 249);
 }
 
-#mobile-page-logo {
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.5rem;
-	color: rgb(252, 249, 249);
-	text-transform: uppercase;
-	letter-spacing: 0.5pt;	
-	padding-left: 1rem;
-}
 	#mobile {
 	width: 100%;
 	background-color: #9ac591;
@@ -97,8 +105,8 @@ nav a {
 }
 .mobile-nav {
 	position: relative;
-	top: 1rem;
-	padding: 0;
+	top: 1.5rem;
+	padding-right: 0.5rem;
 	margin: 0;
 	float: right;
 }
@@ -113,10 +121,29 @@ nav a {
 }
 .menu-items a {
 	color: rgb(252, 249, 249);
-	text-decoration: none;
+}
+#mobile-page-logo {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5rem;
+	color: rgb(252, 249, 249);
+	text-transform: uppercase;
+	letter-spacing: 0.5pt;	
+	margin: 0;
+	padding: 1rem 0rem 0rem;
+	margin-left: 1rem;
+}
+#mobile-subtitel-logo {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1rem;
+	color: rgb(252, 249, 249);
+	text-transform: uppercase;
+	letter-spacing: 0.5pt;
+	margin: 0;
+	margin-left: 1rem;
 }
 #mobile-page-logo a {
 	color: rgb(252, 249, 249);
+	text-decoration: none;
 }
 
 a.intern {
