@@ -349,12 +349,12 @@ footer p {
 	padding: 10px;
 }
 /*mediaquery*/
-@media only screen and (min-width: 452px) {
+@media only screen and (min-width: 801px) {
 	#mobile {
 	display: none;
 	}
 }
-@media only screen and (max-width: 451px) {
+@media only screen and (max-width: 800px) {
 	.page-intro {
   	flex-direction: column-reverse;
   	align-content: center;
@@ -385,7 +385,7 @@ footer p {
 
 }
 
-@media only screen and (max-width: 451px) {
+@media only screen and (max-width: 800px) {
 	.about {
 		flex-direction: column;
 		align-content: center;
@@ -394,6 +394,7 @@ footer p {
 		width: 80%;
 		padding-left: 0;
 	}
+
 	#foto-cv {
 		width: 80%;
 		position: relative;
