@@ -50,6 +50,7 @@ nav.desktop ul {
     display: flex;
     list-style-type: none;
     margin-right: 1rem;
+    max-height: 3rem;
   }
 nav.desktop a {
     vertical-align: bottom;
@@ -60,12 +61,12 @@ nav.desktop a {
     padding: 0rem 0.5rem;
   }
 
-  @media only screen and (min-width: 451px) {
+  @media only screen and (min-width: 691px) {
         .nav-mobile {
       display: none;
     }
 }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 690px) {
         nav.desktop {
           display: none;
         }
@@ -136,7 +137,7 @@ h1, h2 {
     text-align: center;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 690px) {
     .start-here-section {
       flex-flow: column;
       padding: 0;
@@ -171,13 +172,12 @@ h1, h2 {
     display: flex;
 }
 .big-article {
-    width: 68%;
+    width: 60%;
     padding: 2rem 1.5rem;
 }
 #img-big-article {
     width: 100%;
     margin-bottom: 2rem;
-    margin-right: 1.5rem;
 }
 p.big-article {
     margin: 1.5rem;
@@ -221,11 +221,11 @@ p.Read-more {
     background-color:rgb(223, 213, 213);
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 690px) {
 
     .article-section {
         flex-flow: column;
-        max-width: 100%;
+        width: 100%;
     }
     .big-article {
         display: none;
@@ -233,14 +233,14 @@ p.Read-more {
    
     .small-articles {
         flex-flow: column;
-        width: 100%;
+        width: 90%;
         border-bottom: 1px solid rgb(223, 213, 213);
         padding: 1rem;
         margin: 0;
     }
    
     .small-articles img {
-        width: 100%;
+        width: 90%;
     }
     #article-1, #article-2, #article-3 {
         flex-flow: column;
@@ -255,7 +255,7 @@ p.Read-more {
         background-color: white;
     }
     .content-small-article {
-        width: 100%;
+        width: 90%;
         padding: 2rem;
     }
 }
@@ -291,7 +291,7 @@ img.img-course {
     padding: 1rem 1rem 1.5rem 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 691px) {
     .start-learning-section-desktop {
         display:none;
     }
@@ -316,7 +316,7 @@ img.img-course {
 }
 
 
-@media only screen and (min-width: 895px) {
+@media only screen and (min-width: 691px) {
     .start-learning-section-mobile {
         display:none;
     }
@@ -370,7 +370,7 @@ video#video-big-article {
     align-items: center;
     vertical-align: middle;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 690px) {
     #thesis-exhibit {
         flex-flow: column;
     }
@@ -425,7 +425,7 @@ margin: 0rem;
     font-size: 0.75rem;
     margin: 1rem 0.25rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 691px) {
     div#terms {
         display: none;
         }
